@@ -1,5 +1,5 @@
 #coding:utf-8
-from DataBaseControler.StockDataInterface.StockDataInterface import StockDataInterface
+from DataBaseControler.StockDataInterface.StockDataInterfaceLib import StockDataInterface
 import pandas as pd
 import sys,os
 BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

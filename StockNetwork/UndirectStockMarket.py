@@ -14,7 +14,7 @@ import datetime
 import tushare as ts
 import math
 import numpy as np
-from DataBaseControler.StockDataInterface import StockDataInterface
+from DataBaseControler.StockDataInterface import StockDataInterfaceLib
 from CommonLib import TimeSequenceLib
 from EdgeEvaluationLib import UndirectEdge
 
@@ -141,7 +141,7 @@ if __name__ == '__main__':
     '''
     生成完全图的实验数据
     '''
-    stock_data_interface = StockDataInterface.StockDataInterface()
+    stock_data_interface = StockDataInterfaceLib.StockDataInterface()
     stock_list = list(stock_data_interface.stock_basis().index)
     s = UndirectStockMarket()
     end = datetime.datetime.today()-datetime.timedelta(days=1)
